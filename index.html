@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-    <script src="script.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="jscript"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
 <body>
-   
-         <header>
-            <div class="social-icons">
+
+    <header>
+        <div class="first-div">
+            <a href="./">
+                    <img src="./logo.png" alt="logo">
+                </a>
+            
+            
+                 <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -20,55 +29,59 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
               </div>
 
-            <div class="container">
-                <form class="searchbox">
-                    <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
-                    <input type="submit" class="searchbox-submit" value="GO">
-                    <div class="searchbox-icon">
-                        <img src="./images/search.png" alt=""> 
-                    </div>
-                </form>
-            </div>
-            
-
-            <div class="header">
-                <a href="./">
-                    <img src="./images/logo.png" alt="logo">
-                </a>
-            </div>
-            
-         </header>
-         <aside>
-            <ul>
-            <nav>
-                <ul>
-                <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Offer</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Gadget</a></li>
-                        <li><a href="#">Groceries</a></li>
-                        <li><a href="#">Clothing</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            </ul>
-         </aside>
-         <main>
-            <div class="slider">
-                <button id="prev-btn" class="slider-btn">&#8249;</button>
-                <div class="slider-images">
-                    <img src="image1.jpg" alt="Image 1">
-                    <img src="image2.jpg" alt="Image 2">
-                    <img src="image3.jpg" alt="Image 3">
+            <div class="search-bar-icons"></div>
+            <div class="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
-                <button id="next-btn" class="slider-btn">&#8250;</button>
+                <span class="close" onclick="searchToggle(this, event);"></span>
             </div>
-         </main>
-         <footer></footer>
-                 
+         </div>
+        </header>
+        <div class="container">
+        <aside>
+        <div class="aside">
+        <nav>
+            <li>HOME</li>
+          <li class="drop-down-menu">
+            OFFER
+            <ul>
+              <li>APPAREL</li>
+              <li>GADGET</li>
+              <li>GROCERY</li>
+            </ul>
+          </li>
+          <li>ABOUT US</li>
+          <li>CONTACT US</li>
+          
+            </nav>      
+         </aside>   
+        </div>
+
+            <div class="sub-container">
+                
+                <main>
+                <div class="slider">
+                    <button id="prev-btn" class="slider-btn">&#8249;</button>
+                    <div class="slider-images">
+                    <img src="./images/img1.jpg" alt="Image 1">
+                    <img src="./images/img2.jpg" alt="Image 2">
+                    <img src="./images/img3.jpg" alt="Image 3">
+                    </div>
+                    <button id="next-btn" class="slider-btn">&#8250;</button>
+                </div>
+                </main>
+                
+                <footer></footer>
+            </div>
+        </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+ <script src="jscript.js"></script>
 </body>
+
 </html>
