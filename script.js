@@ -11,24 +11,27 @@ function searchToggle(obj, evt){
         }
 }
 
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const sliderImages = document.querySelector('.slider-images');
-const images = Array.from(sliderImages.getElementsByTagName('img'));
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.slider img');
+  var currentImageIndex = 0;
 
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-  updateSlider();
+  function changeImage() {
+    // Hide the current active image
+    images[currentImageIndex].classList.remove('active');
+
+    // Increment the index to show the next image
+    currentImageIndex++;
+    if (currentImageIndex >= images.length) {
+      currentImageIndex = 0;
+    }
+
+    // Show the new active image
+    images[currentImageIndex].classList.add('active');
+  }
+
+  // Initial image display
+  images[currentImageIndex].classList.add('active');
+
+  // Change image every 5 seconds
+  setInterval(changeImage, 5000);
 });
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-  updateSlider();
-});
-
-function updateSlider() {
-  const slideWidth = sliderImages.clientWidth;
-  const transformValue = -currentIndex * slideWidth;
-  sliderImages.style.transform = `translateX(${transformValue}px)`;
-}
