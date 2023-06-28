@@ -201,7 +201,7 @@ header img {
 }
 
 aside {
-  height: 100vh;
+  height: 160vh;
     width: 20vw;
     padding: 30px;
     float: left;
@@ -265,52 +265,14 @@ nav li:hover {
   display: block;
 }
 
-.read-more-less {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  color: var(--primary-color);
-  max-width: 25ch;
-  text-align: justify;
-}
 
-.read-more-less h3 {
-  margin-bottom: 1rem;
-  animation: hot-deal-animation 1s steps(5, start) infinite;
-}
 
-.read-more-less p i {
-  display: inline;
-}
-
-.read-more-less p i.active {
+.hide {
   display: none;
-}
-
-.read-more-less p span {
-  display: none;
-}
-
-.read-more-less p span.active {
-  display: inline;
-}
-
-.read-more-less button {
-  color: var(--primary-color);
-  border: none;
-  padding: 0.8rem;
-  cursor: pointer;
-  margin-top: 0.5rem;
-}
-
-.read-more-less button:hover {
-  color: var(--secondary-color);
 }
 
 main {
-  height: 90vh;
+  height: 150vh;
     width: 80vw;
     padding: 20px;
     margin-left: 20vw;
@@ -319,7 +281,7 @@ main {
 
 .slider {
   width: 70vw;
-  height: 80VH;
+  height: 70VH;
   margin-left: 130PX;
   margin-top: 10PX;
   overflow: hidden;
@@ -327,7 +289,7 @@ main {
 
 .slider img {
   width: 60vw;
-  height: 80VH;
+  height: 70VH;
   display: none;
 }
 
@@ -335,6 +297,39 @@ main {
   display: block;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: column;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 35px;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 40vh;
+}
+
+.card-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-info h3 {
+  font-size: 20px;
+}
+
+.card-info p {
+  font-size: 16px;
+  color: #888;
+}
 
 footer {
   height: 10vh;
