@@ -35,3 +35,25 @@ document.addEventListener('DOMContentLoaded', function() {
   // Change image every 5 seconds
   setInterval(changeImage, 5000);
 });
+
+// read more bottom
+function toggleContent() {
+  var moreContent = document.getElementById("moreContent");
+  var btn = document.getElementById("readMoreBtn");
+  
+  if (moreContent.classList.contains("hide")) {
+    moreContent.classList.remove("hide");
+    btn.innerHTML = "Read Less";
+  } else {
+    moreContent.classList.add("hide");
+    btn.innerHTML = "Read More";
+  }
+}
+
+function zoomIn(image) {
+  image.style.transform = "scale(1.2)";
+}
+
+function zoomOut(image) {
+  image.style.transform = "scale(1)";
+}
