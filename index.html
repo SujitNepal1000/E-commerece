@@ -55,16 +55,16 @@
           <li>ABOUT US</li>
           <li>CONTACT US</li>
           <li>Sale</li>
-          <div class="read-more-less">
+          <div id="content">
             <h3>Sale</h3>
             <p>
-                Get ready to elevate your style with incredible discounts and irresistible offers on our trendy and fashionable apparel. We believe that everyone deserves to look and feel their best, without breaking the bank.
-              <i>...</i>
-              <span>
-                That's why we've carefully curated a collection of our most sought-after clothing items at discounted prices. From chic dresses and stylish tops to comfortable loungewear and statement accessories, our sale section has something for everyone.Whether you're searching for the perfect outfit for a special occasion or simply looking to refresh your wardrobe, our sale options provide the perfect opportunity to snag your favorite pieces at a fraction of the original price. Don't miss out on these fantastic deals – browse through our sale section now and discover your new favorite fashion finds!
-              </span>
-            </p>
-            <button>Read More ⯆</button>
+                Get ready to elevate your style with incredible discounts and irresistible offers on our trendy and fashionable apparel. 
+              </p>
+              <p>
+                We believe that everyone deserves to look and feel their best, without breaking the bank.
+              </p>
+              <p id="moreContent" class="hide">That's why we've carefully curated a collection of our most sought-after clothing items at discounted prices.</p>
+              <button id="readMoreBtn" onclick="toggleContent()">Read More</button>
           </div>
             </nav>      
          </aside>   
@@ -77,12 +77,37 @@
                     <img src="image1.jpg" alt="Image 1">
                      <img src="image2.jpg" alt="Image 2">
                      <img src="image3.jpg" alt="Image 3">
-                     <img src="image4.jpg" alt="Image 3">
-                     <img src="image5.jpg" alt="Image 3">
+                     <img src="image4.jpg" alt="Image 4">
+                     <img src="image5.jpg" alt="Image 5">
+                    </div>
+                
+                  <div class="cards">
+                      <div class="card">
+                        <img src="image1.jpg" alt="Product1" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        <div class="card-info">
+                          <h3>Pants</h3>
+                          <p>$19.99</p>
+                        </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="image2.jpg" alt="product2" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                    <div class="card-info">
+                      <h3>Shoes</h3>
+                      <p>$24.99</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="image3.jpg" alt="product3" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                    <div class="card-info">
+                      <h3>T-shirts</h3>
+                      <p>$14.99</p>
                     </div>
 
-                </main>
-                
+                  </div>
+                </div>
+              </main>
                 <footer></footer>
             </div>
         </div>
