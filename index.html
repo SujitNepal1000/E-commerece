@@ -19,8 +19,9 @@
             <a href="./">
                     <img src="./logo.png" alt="logo">
                 </a>
-            
-            
+                
+                <button id="signupButton">Sign Up</button>
+
                  <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -87,6 +88,10 @@
                         <div class="card-info">
                           <h3>Pants</h3>
                           <p>$19.99</p>
+                          <div class="buttons">
+                            <a href="product1.html" class="browse-btn">Browse</a>
+                            <a href="addtocart.html" class="add-to-cart-btn">Add to Cart</a>
+                          </div>
                         </div>
                   </div>
 
@@ -95,6 +100,10 @@
                     <div class="card-info">
                       <h3>Shoes</h3>
                       <p>$24.99</p>
+                      <div class="buttons">
+                        <a href="product2.html" class="browse-btn">Browse</a>
+                        <a href="addtocart.html" class="add-to-cart-btn">Add to Cart</a>
+                      </div>
                     </div>
                   </div>
 
@@ -103,6 +112,10 @@
                     <div class="card-info">
                       <h3>T-shirts</h3>
                       <p>$14.99</p>
+                      <div class="buttons">
+                        <a href="product2.html" class="browse-btn">Browse</a>
+                        <a href="addtocart.html" class="add-to-cart-btn">Add to Cart</a>
+                      </div>
                     </div>
 
                   </div>
@@ -110,6 +123,18 @@
               </main>
                 <footer></footer>
             </div>
+
+            <div id="overlay" class="overlay">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+      </form>
+      <button id="closeButton">Close</button>
+    </div>
         </div>
 
 
@@ -117,6 +142,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
  <script src="jscript.js"></script>
+ <script src="signup.js"></script>
 </body>
 
 </html>
